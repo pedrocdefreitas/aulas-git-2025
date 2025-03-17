@@ -15,6 +15,8 @@
          font-family: "Nunito", sans-serif;
          color: aliceblue;
          background: #000;
+
+         transition: all .5s;
       }
 
       body{
@@ -30,6 +32,24 @@
       h3{
          font-size: 4rem;
       }
+
+      #anotacoes{
+         max-width: 400px;
+      }
+
+      .att{
+         color: yellow;
+      }
+
+      .ok{
+         color: blue;
+      }
+
+      @media (max-width: 600px) {
+         body {
+            flex-direction: column;
+         }
+      }
    </style>
 
 </head>
@@ -44,7 +64,7 @@
       <h3> Aula de GIT </h3>
    </section>
 
-   <section>
+   <section id="anotacoes">
 
       <section style="margin-bottom: 15px;">
          <h4>Para iniciar o GIT no terminal</h4>
@@ -63,7 +83,14 @@
       </section>
 
       <section style="margin-bottom: 15px;">
-         <h4>Enviar seus arquivos para o REOSITORIO ( HUB GIT )</h4>
+         <h4>Enviar seus arquivos para o STAGE ( PASTA GIT LOCAL )</h4>
+         <p>Use comando: git add . ou git add --all 
+         <blockquote>sempre verifique o statos, git status </blockquote>
+      </p>
+      </section>
+
+      <section style="margin-bottom: 15px;">
+         <h4>Fazendo commit - salvando as novas mudanças de fato.</h4>
          <p>Use comando: git commit -m "Primeiro Commit". 
          <blockquote> Commit é a modigicação dos arquivos. Use um nome que tenha a ver com essa mudança... exemplo: "adicionando uma nova imagem" </blockquote>
       </p>
