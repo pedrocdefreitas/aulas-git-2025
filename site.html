@@ -45,8 +45,33 @@
       }
 
       #anotacoes{
+         box-sizing: border-box;
+         padding: 15px;
          max-width: 400px;
+         height: 600px;
+         overflow-y: auto;
+         overflow-x: hidden;
+         scroll-behavior: smooth;
+         scrollbar-color: dark;
+         
       }
+
+      #anotacoes::-webkit-scrollbar {
+      width: 5px;               /* width of the entire scrollbar */
+      }
+
+      #anotacoes::-webkit-scrollbar-track {
+      background: rgb(14, 9, 1);        /* color of the tracking area */
+      }
+
+      #anotacoes::-webkit-scrollbar-thumb {
+         background-color: rgb(119, 119, 139);    /* color of the scroll thumb */
+         border-radius: 20px;       /* roundness of the scroll thumb */
+      }
+            
+         
+
+
 
       .att{
          color: yellow;
@@ -163,9 +188,100 @@
             <p>Use comando: git checkout [id-do-commit-específico.] 
             <blockquote> O comando git checkout faz a troca entre branches ou restaura arquivos da árvore de trabalho. Há diversas opções para esse comando que não serão tratadas aqui, mas que você poderá examinar na documentação do Git (em inglês). </blockquote>
             <h4 class="att">Se a tela travar: Pressione a tecla "q"</h4>
+
+            <h4 class="att"> Se tiver alguma modificação pendente sem commitar, faça um git add e o commit sempre  antes de realizar o git checkout.</h4>
          </p>
          </section>
 
+
+         <section>
+            <h4>Desfazendo o checkout - Voltando para o ultimo commit realizado </h4>
+
+            <p>Use comando: git checkout master ou main</p>
+
+            <blockquote>  
+
+               <!-- omando git checkout faz a troca entre branches ou restaura arquivos da árvore de trabalho. Há diversas opções para esse comando que não serão tratadas aqui, mas que você poderá examinar na documentação do Git (em inglês).  -->
+
+            </blockquote>
+
+            <h4 class="att">
+               <!-- Se a tela travar: Pressione a tecla "q" -->
+            </h4>
+
+         </section>
+
+
+         <section>
+            <h4>Trabalhando com BRANCHES E MERGES.</h4>
+
+            <blockquote>  
+
+               * Todo branch deriva de um commit e o merge gera um novo commit.
+               <br><br>
+
+          
+               * Branch é uma cópia daquele commit para ser trabalhado em uma nova linha do tempo, sem modificar ainda a linha principal.
+               <br><br>
+
+         
+               Quando o trabalho dessa branch secundária for finalizada, é necerrário realizar um merge para fundir as alterações na linha do tempo principal.
+               <br><br>
+          
+               <span class="att">Atenção</span>
+               Se durante o processo de trabalho na branch alternativa acontecer muitos commits na branch principal, é recomendado atualizar a branch alternativa com as atualizações da principal.
+
+            </blockquote>
+
+            <p>Use comando: git checkout master ou main para mudar para a linha do tempo principal.
+
+            </p>
+            <br><br>
+            <p>
+               Criar uma nova branch: Use git branch nome-da-branch
+            </p>
+            <br><br>
+            <p>
+               Use git status para visualizar a branch atual e onde foi criada a nova branch
+            </p>
+            <br><br>
+            <p>
+               Para começar a trabalhar na nova branch, Use git checkout none-da-branch
+            </p>
+
+            <blockquote>  
+
+               O head sempre vai informar onde você está atualmente na linha do tempo.
+               ( HEAD -> nome-da-branch, master )
+               ( HEAD -> master, nome-da-branch)
+
+            </blockquote>
+
+            <h4>Como juntar todos os branchs na linha principal.</h4>
+
+           
+
+            <h4 class="att">
+               <!-- Se a tela travar: Pressione a tecla "q" -->
+            </h4>
+
+         </section>
+
+         <section>
+            <h4>
+               Trabalhando com o GITHUB
+            </h4>
+            <p>GITHUB é um serviço de hospedagem e gerenciamento dos arquivos que utilizam o GIT, ambos se completam, mas são coisas distintas.</p>
+            <br>
+            <p>GIT é um sistema de controle de versão</p>
+            <p>GITHUB é um serviço de repositorio remoto desses arquivos.</p>
+
+            <blockquote>
+               <p>Cria seu repositorio no site do GITHUB</p>
+               <p></p>
+            </blockquote>
+
+         </section>
       </section>
       
       
